@@ -171,20 +171,9 @@ def contacts():
 # -----------------------------
 # RUN
 # -----------------------------
-if __name__ == "__main__":
-    print("Flask запущен")
-    app.run(debug=True)
-@app.route("/animal/<int:animal_id>")
-def animal_page(animal_id):
-    animal = animals_data.get(animal_id)
-    return render_template("animal.html", animal=animal)
-@app.route("/animal/<int:animal_id>")
-def animal_page(animal_id):
-    animal = animals_data.get(animal_id)
-    return render_template("animal.html", animal=animal)
-    import os
 import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
