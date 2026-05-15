@@ -183,6 +183,7 @@ def animal_page(animal_id):
     animal = animals_data.get(animal_id)
     return render_template("animal.html", animal=animal)
     import os
+import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
