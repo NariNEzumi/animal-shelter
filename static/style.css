@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #ff7b00;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO BACKGROUND */
+.hero-bg {
+    background-image: url("https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8");
+    background-size: cover;
+    background-position: center;
+    padding: 140px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* CONTACT */
+.contacts {
+    text-align: center;
+    padding: 60px;
+}
+
+.box {
+    background: white;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 12px;
+}
+.hero {
+    position: relative;
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.about {
+    padding: 80px;
+    text-align: center;
+    color: black;
+    background: #f7f7f7;
+}
+
+.about h2 {
+    font-size: 40px;
+}
+.about {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1450778869180-41d0601e046e");
+    background-size: cover;
+    background-position: center;
+}
+
+/* затемнение фона чтобы текст не рябил */
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+/* карточка с текстом */
+.about-content {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: #222;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.animals-page {
+    position: relative;
+    padding: 40px;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1601758174114-e711c0cbaa69");
+    background-size: cover;
+    background-position: center;
+}
+
+/* затемнение чтобы не мешало */
+.animals-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.75);
+}
+
+.animals-content {
+    position: relative;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    display: block;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.story {
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 4px solid #ff7b00;
+    background: #f6f6f6;
+    font-style: italic;
+    color: #333;
+}
+.animal-card {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.animal-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.animal-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.animal-box {
+    max-width: 600px;
+    text-align: center;
+}
+
+.big-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.story-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid orange;
+    background: #f7f7f7;
+}
